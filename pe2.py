@@ -1,13 +1,17 @@
-thisNumber = 2
-lastNumber = 1
-fibsum = 0
+def projecteuler002():
+    thisNumber = 2
+    lastNumber = 1
+    fibsum = 0
 
-while thisNumber < 4000000:
-    if thisNumber%2==0:
-        fibsum += thisNumber
+    while thisNumber < 4000000:
+        if thisNumber%2==0:
+            fibsum += thisNumber
 
-    nextNumber = thisNumber + lastNumber
-    lastNumber = thisNumber
-    thisNumber = nextNumber
+        nextNumber = thisNumber + lastNumber
+        lastNumber = thisNumber
+        thisNumber = nextNumber
 
-print(fibsum) #4613732
+    print(fibsum)
+
+if __name__=="__main__":
+    projecteuler002() #4613732
