@@ -1,4 +1,4 @@
-def projecteuler003(n):
+def listPrimeFactors(n):
     i = 2
     prime_factors = list()
     while i ** 2 <= n:
@@ -13,5 +13,5 @@ def projecteuler003(n):
 
 if __name__=="__main__":
     n = 600851475143
-    prime_factors = projecteuler003(n)
+    prime_factors = listPrimeFactors(n)
     print(prime_factors[-1]) #6857

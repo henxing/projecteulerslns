@@ -1,15 +1,16 @@
-def projecteuler004():
+def findPalindrome(exp):
     big_palindrome = -1
 
-    for i in range(100, 1000):
-        for j in range(100, 1000):
+    for i in range(10**exp, 10**(exp-1), -1):
+        for j in range(i, 10**(exp-1), -1):
             num = i * j
             rnum = int(str(num)[::-1])
 
             if num==rnum and num > big_palindrome:
                 big_palindrome = num
 
-    print(big_palindrome) #906609
+    return big_palindrome
 
 if __name__=="__main__":
-    projecteuler004() #906609
+    palindrome = findPalindrome(3)
+    print(palindrome) #906609
